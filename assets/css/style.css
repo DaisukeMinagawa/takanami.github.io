@@ -113,6 +113,11 @@ section > h2 {
   font-size: 1rem;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 769px) {
   #nav-list {
     display: flex;
@@ -209,5 +214,9 @@ footer {
 
   section {
     font-size: 1em;
+  }
+
+  section > h1 {
+    font-size: 1.1rem;
   }
 }
