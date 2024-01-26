@@ -110,7 +110,7 @@ section > h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 @media (min-width: 769px) {
