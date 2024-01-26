@@ -225,3 +225,8 @@ footer {
     flex-direction: column;
   }
 }
+
+@media (max-width: 320px) {
+  h1{
+    font-size: 0.8rem;
+  }
