@@ -113,9 +113,14 @@ section > h2 {
   font-size: 1rem;
 }
 
-#contact {
+/* #contact {
   display: flex;
   flex-direction: column;
+} */
+
+#contact-form {
+  color: #000;
+  text-align: center;
 }
 
 @media (min-width: 769px) {
