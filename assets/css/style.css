@@ -1,0 +1,204 @@
+/* 全体のリセットとベース設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Source Code Pro", monospace;
+  font-size: 32px;
+}
+
+/* ナビゲーションスタイル */
+#nav {
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  font-size: 32px;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#nav li {
+  margin: 0 10px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* セクションのスタイル */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+section > h1 {
+  font-size: 3rem;
+  background-color: blue;
+  opacity: 70%;
+}
+
+section > h2 {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 70%;
+}
+
+/* ナビゲーションがスクロールで上部に固定されるようにする */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ハンバーガーメニューアイコンのスタイル */
+#nav-icon {
+  cursor: pointer;
+  display: none; /* モバイルビュー以外では非表示 */
+  z-index: 2000;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+#nav-icon span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: #333;
+  transition: 0.3s ease-in-out;
+}
+
+/* ハンバーガーメニューがクリックされたときのアニメーション */
+#nav-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+#nav-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#nav-list {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+}
+
+#nav-list li {
+  text-align: center;
+}
+
+#home {
+  background-image: url("../img/constructionDX_001.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 64px;
+}
+
+@media (min-width: 769px) {
+  #nav-list {
+    display: flex;
+    background: #fff;
+  }
+
+  #nav-list li {
+    flex: 1;
+  }
+
+  #nav-icon {
+    display: none;
+  }
+
+  #home {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  #header {
+    position: relative;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* 初期状態では非表示 */
+  }
+
+  #nav-icon {
+    position: block; /* ハンバーガーメニューアイコンを表示 */
+  }
+
+  #nav-list {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+  }
+
+  #nav li {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  section {
+    padding: 15px;
+    font-size: 1.5em;
+  }
+
+  /* ハンバーガーメニューアイコン表示 */
+  #nav-icon {
+    display: block;
+  }
+
+  /* ナビゲーションリストがアクティブなときのスタイル */
+  #nav ul.active {
+    display: flex; /* アクティブな時は表示 */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* メニュー背景色 */
+    position: absolute;
+    top: 50px; /* アイコンのサイズと同じ値 */
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    font-size: 1em;
+  }
+}
