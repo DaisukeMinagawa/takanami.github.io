@@ -121,7 +121,7 @@ section > h2 {
 
   #nav-list li {
     flex: 1;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #nav-icon {
