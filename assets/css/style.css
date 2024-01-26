@@ -202,6 +202,11 @@ footer {
     flex-direction: column;
   }
 
+  #nav ul li {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+
   section {
     font-size: 1em;
   }
