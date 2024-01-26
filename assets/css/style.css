@@ -128,12 +128,11 @@ section > h2 {
   }
 
   #home {
-    font-size: 2rem;
+    font-size: 0.8rem;
   }
 }
 
 footer {
-  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
