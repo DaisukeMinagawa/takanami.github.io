@@ -46,27 +46,15 @@
       </h2>
     </section>
     <section id="service" style="background-color: pink">Service</section>
-<<<<<<< HEAD
     <section id="contact" style="background-color: #fff">
       <div data-aos="fade-up-right">
         <h2 id="contact-form">お問い合わせフォーム</h2>
-        <form
-          class="contact-form row"
-          action=".\form\email.php"
-          method="post"
-        >
-=======
-    <section id="contact" style="background-color: green">
-      <div data-aos="fade-up-right">
-        <h2>お問い合わせフォーム</h2>
-        <form action="email.php" method="post">
->>>>>>> b36a67bf6b53b5250891929e15beb5aceb2f8177
+        <form class="contact-form row" action=".\form\email.php" method="post">
           <input
             type="hidden"
             name="csrf_token"
             value="<?php echo $_SESSION['csrf_token']; ?>"
           />
-<<<<<<< HEAD
           <div class="form-field col x-50">
             <input id="name" class="input-text js-input" type="text" required />
             <label class="label" for="name">Name</label>
@@ -92,7 +80,6 @@
           <div>
             <input class="submit-btn" type="submit" value="送信する" />
           </div>
-=======
           <div>
             <label for="name">名前:</label>
             <input type="text" id="name" name="name" required />
@@ -106,7 +93,6 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit">送信</button>
->>>>>>> b36a67bf6b53b5250891929e15beb5aceb2f8177
         </form>
         <?php if (isset($_SESSION['feedback'])): ?>
         <p><?= $_SESSION['feedback']; ?></p>
@@ -130,4 +116,23 @@
       });
     </script>
   </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCir0JlelNDdw8LJ3FjjK5Sp-Q-yPYh8-Q",
+      authDomain: "fir-react-25cf7.firebaseapp.com",
+      projectId: "fir-react-25cf7",
+      storageBucket: "fir-react-25cf7.appspot.com",
+      messagingSenderId: "68534449806",
+      appId: "1:68534449806:web:cc21cac3f93c05a17d3bdf",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </html>

@@ -1,0 +1,21 @@
+[debug] [2024-01-27T15:51:55.913Z] ----------------------------------------------------------------------
+[debug] [2024-01-27T15:51:55.917Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-27T15:51:55.918Z] CLI Version:   13.1.0
+[debug] [2024-01-27T15:51:55.919Z] Platform:      win32
+[debug] [2024-01-27T15:51:55.919Z] Node Version:  v18.12.1
+[debug] [2024-01-27T15:51:55.921Z] Time:          Sun Jan 28 2024 00:51:55 GMT+0900 (日本標準時)
+[debug] [2024-01-27T15:51:55.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-27T15:51:55.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-27T15:51:55.930Z] > authorizing via signed-in user (iamworkingwell@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\takanami.github.io
+
