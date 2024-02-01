@@ -113,6 +113,21 @@ section > h2 {
   font-size: 1rem;
 }
 
+#service {
+  display: flex;
+}
+
+#service > div {
+  flex: 1;
+  text-align: center;
+}
+
+#news,
+h2#newses {
+  display: block;
+  width: 100%;
+}
+
 /* #contact {
   display: flex;
   flex-direction: column;
